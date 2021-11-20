@@ -6,10 +6,10 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source "$CURRENT_DIR/scripts/common.sh"
 
 set_pane_split_bindings() {
-  tmux bind-key "|" run "$CURRENT_DIR/scripts/split.sh -h -c"
-  tmux bind-key "\\" run "$CURRENT_DIR/scripts/split.sh -fh -c"
-  tmux bind-key "-" run "$CURRENT_DIR/scripts/split.sh -v -c"
-  tmux bind-key "_" run "$CURRENT_DIR/scripts/split.sh -fv -c"
+  #tmux bind-key "|" run "$CURRENT_DIR/scripts/split.sh -h -c"
+  #tmux bind-key "\\" run "$CURRENT_DIR/scripts/split.sh -fh -c"
+  #tmux bind-key "-" run "$CURRENT_DIR/scripts/split.sh -v -c"
+  #tmux bind-key "_" run "$CURRENT_DIR/scripts/split.sh -fv -c"
   tmux bind-key "%" run "$CURRENT_DIR/scripts/split.sh -h -c"
   tmux bind-key '"' run "$CURRENT_DIR/scripts/split.sh -v -c"
 }
